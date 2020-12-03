@@ -11,7 +11,7 @@ Make Sure you install correct version of mXparser that is matching your version 
 
 #### How To Download it and use it?
 
-just download the zip file and  run in it your android studio :)
+just download the zip file or clone the repository in your androidStudioProjects and  run in it your android studio :)
 
 #### Screenshot
 ![](https://imgur.com/nO7Z0XV.jpg)
