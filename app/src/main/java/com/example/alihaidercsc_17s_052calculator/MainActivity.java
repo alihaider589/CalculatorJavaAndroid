@@ -1,6 +1,7 @@
 package com.example.alihaidercsc_17s_052calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
+import org.mariuszgromada.math.mxparser.*;
 
 import android.os.Bundle;
 import android.text.SpannableString;
@@ -129,7 +130,12 @@ updateText("0");
 
     }
     public void equalstoBTN(View view){
-        updateText("=");
+        String userExp = display.getText().toString();
+        Expression exp = new Expression(userExp);
+        String result  = String.valueOf(exp.calculate());
+        display.setText(result);
+        display.setSelection(result.length());
+
 
     }
     public void pointBTN(View view){
